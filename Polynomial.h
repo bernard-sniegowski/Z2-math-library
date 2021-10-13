@@ -14,7 +14,6 @@ public:
 	Polynomial();
 	Polynomial(unsigned int deg, Z2* t);
 	Polynomial(const Polynomial& p);
-	// Polynomial(Polynomial& p);
 	void operator=(const Polynomial& p);
 	~Polynomial();
 	Z2 operator[](unsigned int i) const;
@@ -25,7 +24,6 @@ public:
 	bool is_zero() const;
 	void clear();
 	void update_deg_mod();
-// private:
 };
 
 ostream& operator<<(ostream& out, const Polynomial& p);
